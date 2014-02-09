@@ -36,3 +36,17 @@ exports['Get div inside h1'] = function (test) {
     test.equal(result.tag(), 'div');
     test.equal(result.text(), 'Hello');
 }
+
+exports['Get two divs as array'] = function (test) {
+    var doc = ss.doc('<h1><div>Hello</div><div>World</div></h1>');
+    var result = doc.select('div').toArray();
+    
+    test.ok(result);
+    test.ok(Array.isArray(result));
+    test.equal(result.length, 2);
+    test.equal(result[0].tag(), 'div');
+    test.equal(result[0].text(), 'Hello');
+    test.equal(result[1].tag(), 'div');
+    test.equal(result[1].text(), 'World');
+}
+
