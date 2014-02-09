@@ -27,3 +27,12 @@ exports['Get simple div without text'] = function (test) {
     test.equal(result.tag(), 'div');
     test.equal(result.text(), null);
 }
+
+exports['Get div inside h1'] = function (test) {
+    var doc = ss.doc('<h1><div>Hello</div></h1>');
+    var result = doc.select('div').first();
+    
+    test.ok(result);
+    test.equal(result.tag(), 'div');
+    test.equal(result.text(), 'Hello');
+}
