@@ -91,3 +91,18 @@ exports['Get divs using next'] = function (test) {
     
     test.equal(result, null);
 }
+
+exports['Get div using where and next'] = function (test) {
+    var doc = ss.doc('<h1><div>Hello</div><div>World</div></h1>');
+    var divs = doc.select('div').where(function(item) { return item.text() == 'Hello'; });
+    
+    var result = divs.next();
+    
+    test.ok(result);
+    test.equal(result.tag(), 'div');
+    test.equal(result.text(), 'Hello');
+    
+    var result = divs.next();
+    
+    test.equal(result, null);
+}
