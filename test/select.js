@@ -70,3 +70,24 @@ exports['Get composite text'] = function (test) {
     test.ok(result);
     test.equal(result.text(), 'HelloWorld');
 }
+
+exports['Get divs using next'] = function (test) {
+    var doc = ss.doc('<h1><div>Hello</div><div>World</div></h1>');
+    var divs = doc.select('div');
+    
+    var result = divs.next();
+    
+    test.ok(result);
+    test.equal(result.tag(), 'div');
+    test.equal(result.text(), 'Hello');
+    
+    var result = divs.next();
+    
+    test.ok(result);
+    test.equal(result.tag(), 'div');
+    test.equal(result.text(), 'World');
+    
+    var result = divs.next();
+    
+    test.equal(result, null);
+}
