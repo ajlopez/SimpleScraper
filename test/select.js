@@ -62,3 +62,11 @@ exports['Get no div'] = function (test) {
     test.ok(Array.isArray(result));
     test.equal(result.length, 0);
 }
+
+exports['Get composite text'] = function (test) {
+    var doc = ss.doc('<h1><div>Hello</div><div>World</div></h1>');
+    var result = doc.select('h1').first();
+    
+    test.ok(result);
+    test.equal(result.text(), 'HelloWorld');
+}
