@@ -50,3 +50,15 @@ exports['Get two divs as array'] = function (test) {
     test.equal(result[1].text(), 'World');
 }
 
+exports['Get no div'] = function (test) {
+    var doc = ss.doc('<h1>Hello world</h1>');
+    var result = doc.select('div').first();
+    
+    test.equal(result, null);
+    
+    var result = doc.select('div').toArray();
+    
+    test.ok(result);
+    test.ok(Array.isArray(result));
+    test.equal(result.length, 0);
+}
