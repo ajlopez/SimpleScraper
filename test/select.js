@@ -10,6 +10,24 @@ exports['Get simple div'] = function (test) {
     test.equal(result.text(), 'Hello');
 }
 
+exports['Get simple div using select with upper case'] = function (test) {
+    var doc = ss.doc('<div>Hello</div>');
+    var result = doc.select('DIV').first();
+    
+    test.ok(result);
+    test.equal(result.tag(), 'div');
+    test.equal(result.text(), 'Hello');
+}
+
+exports['Get simple div with upper case in HTML'] = function (test) {
+    var doc = ss.doc('<DIV>Hello</DIV>');
+    var result = doc.select('div').first();
+    
+    test.ok(result);
+    test.equal(result.tag(), 'div');
+    test.equal(result.text(), 'Hello');
+}
+
 exports['Get simple div with empty text'] = function (test) {
     var doc = ss.doc('<div></div>');
     var result = doc.select('div').first();
