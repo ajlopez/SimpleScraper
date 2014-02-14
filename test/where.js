@@ -15,5 +15,3 @@ exports['Get element using doc where'] = function (test) {
     
     test.equal(result, null);
 }
-
-var ss = require('..');
