@@ -27,7 +27,7 @@ exports['Find first tag'] = function (test) {
     var element = doc.find().first();
     
     test.ok(element);
-    test.equal(elements.tag(), "h1");
+    test.equal(element.tag(), "h1");
 }
 
 exports['Find each tag'] = function (test) {
@@ -41,17 +41,17 @@ exports['Find each tag'] = function (test) {
     var element = iterator.next();
     
     test.ok(element);
-    test.equal(elements.tag(), "h1");
+    test.equal(element.tag(), "h1");
     
     var element = iterator.next();
     
     test.ok(element);
-    test.equal(elements.tag(), "div");
+    test.equal(element.tag(), "div");
     
     var element = iterator.next();
     
     test.ok(element);
-    test.equal(elements.tag(), "div");
+    test.equal(element.tag(), "div");
     
     var element = iterator.next();
     
