@@ -30,30 +30,40 @@ exports['Find first tag'] = function (test) {
     test.equal(element.tag(), "h1");
 }
 
+exports['Find first tag in lower case'] = function (test) {
+    var text = '<H1><div>Hello</div><div>World</div></h1>';
+    var doc = ss.document(text);
+    
+    var element = doc.find().first();
+    
+    test.ok(element);
+    test.equal(element.tag(), "h1");
+}
+
 exports['Find each tag'] = function (test) {
     var text = '<h1><div>Hello</div><div>World</div></h1>';
     var doc = ss.document(text);
     
-    var iterator = doc.find().iterator();
+    var elements = doc.find();
     
-    test.ok(iterator);
+    test.ok(elements);
     
-    var element = iterator.next();
+    var element = elements.next();
     
     test.ok(element);
     test.equal(element.tag(), "h1");
     
-    var element = iterator.next();
+    var element = elements.next();
     
     test.ok(element);
     test.equal(element.tag(), "div");
     
-    var element = iterator.next();
+    var element = elements.next();
     
     test.ok(element);
     test.equal(element.tag(), "div");
     
-    var element = iterator.next();
+    var element = elements.next();
     
     test.equal(element, null);
 }
