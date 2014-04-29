@@ -68,3 +68,10 @@ exports['Find each tag'] = function (test) {
     test.equal(element, null);
 }
 
+exports['Get text'] = function (test) {
+    var text = '<h1><div>Hello</div><div>World</div></h1>';
+    var doc = ss.document(text);
+    
+    test.equal(doc.text(), "HelloWorld");
+}
+
