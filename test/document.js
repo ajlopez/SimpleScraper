@@ -75,3 +75,29 @@ exports['Get text'] = function (test) {
     test.equal(doc.text(), "HelloWorld");
 }
 
+exports['Get document content'] = function (test) {
+    var text = '<h1><div>Hello</div><div>World</div></h1>';
+    var doc = ss.document(text);
+    
+    test.equal(doc.content(), text);
+}
+
+exports['Get first element content'] = function (test) {
+    var text = '<h1><div>Hello</div><div>World</div></h1>';
+    var doc = ss.document(text);
+    var elements = doc.find();
+    var element = elements.first();
+    
+    test.equal(element.content(), text);
+}
+
+exports['Get second element content'] = function (test) {
+    var text = '<h1><div>Hello</div><div>World</div></h1>';
+    var doc = ss.document(text);
+    var elements = doc.find();
+    elements.next();
+    var element = elements.next();
+    
+    test.equal(element.content(), "<div>Hello</div>");
+}
+
