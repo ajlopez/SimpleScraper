@@ -1,9 +1,12 @@
 
 var ss = require('..');
 
+var text;
+var doc;
+    
 exports['Create document and to string'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
+    text = '<h1><div>Hello</div><div>World</div></h1>';
+    doc = ss.document(text);
     
     test.ok(doc);
     test.ok(typeof doc == 'object');
@@ -11,9 +14,6 @@ exports['Create document and to string'] = function (test) {
 }
 
 exports['Find tags'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
-    
     var elements = doc.find();
     
     test.ok(elements);
@@ -21,9 +21,6 @@ exports['Find tags'] = function (test) {
 }
 
 exports['Find first tag'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
-    
     var element = doc.find().first();
     
     test.ok(element);
@@ -31,9 +28,6 @@ exports['Find first tag'] = function (test) {
 }
 
 exports['Find first tag in lower case'] = function (test) {
-    var text = '<H1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
-    
     var element = doc.find().first();
     
     test.ok(element);
@@ -41,9 +35,6 @@ exports['Find first tag in lower case'] = function (test) {
 }
 
 exports['Find each tag'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
-    
     var elements = doc.find();
     
     test.ok(elements);
@@ -69,22 +60,14 @@ exports['Find each tag'] = function (test) {
 }
 
 exports['Get text'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
-    
     test.equal(doc.text(), "HelloWorld");
 }
 
 exports['Get document content'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
-    
     test.equal(doc.content(), text);
 }
 
 exports['Get first element content'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
     var elements = doc.find();
     var element = elements.first();
     
@@ -92,8 +75,6 @@ exports['Get first element content'] = function (test) {
 }
 
 exports['Get second element content'] = function (test) {
-    var text = '<h1><div>Hello</div><div>World</div></h1>';
-    var doc = ss.document(text);
     var elements = doc.find();
     elements.next();
     var element = elements.next();
