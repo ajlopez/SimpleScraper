@@ -65,3 +65,19 @@ exports['Get second element content'] = function (test) {
     test.equal(element.content(), "<div>Hello</div>");
 }
 
+exports['Get div elements'] = function (test) {
+    var elements = doc.find("div");
+    
+    var element = elements.next();
+    test.ok(element);
+    test.equal(element.tag(), "div");
+    test.equal(element.text(), "Hello");
+    
+    var element = elements.next();
+    test.ok(element);
+    test.equal(element.tag(), "div");
+    test.equal(element.text(), "World");
+    
+    test.equal(elements.next(), null);
+}
+
