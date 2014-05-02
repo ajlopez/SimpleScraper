@@ -50,19 +50,19 @@ exports['Find each element'] = function (test) {
     test.equal(element, null);
 }
 
-exports['Get first element content'] = function (test) {
+exports['Get first element to string'] = function (test) {
     var elements = doc.find();
     var element = elements.first();
     
-    test.equal(element.content(), text);
+    test.equal(element.toString(), text);
 }
 
-exports['Get second element content'] = function (test) {
+exports['Get second element to string'] = function (test) {
     var elements = doc.find();
     elements.next();
     var element = elements.next();
     
-    test.equal(element.content(), "<div>Hello</div>");
+    test.equal(element.toString(), "<div>Hello</div>");
 }
 
 exports['Get div elements'] = function (test) {

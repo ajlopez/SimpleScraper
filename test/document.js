@@ -17,8 +17,4 @@ exports['Get text'] = function (test) {
     test.equal(doc.text(), "HelloWorld");
 }
 
-exports['Get document content'] = function (test) {
-    test.equal(doc.content(), text);
-}
-
 
