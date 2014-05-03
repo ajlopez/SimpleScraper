@@ -26,3 +26,13 @@ exports['Get attributes'] = function (test) {
     test.equal(result.class, 'message');
 }
 
+exports['Get attribute as flag'] = function (test) {
+    var text = '<input required/>';
+    var elem = ss.element(text);
+    var result = elem.attributes();
+    
+    test.ok(result);
+    test.equal(typeof result, 'object');
+    test.strictEqual(result.required, true);
+}
+
