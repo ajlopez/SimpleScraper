@@ -36,3 +36,8 @@ exports['Get attribute as flag'] = function (test) {
     test.strictEqual(result.required, true);
 }
 
+exports['Get attribute by name'] = function (test) {
+    test.equal(elem.attribute('class'), 'message');
+    test.equal(elem.attribute('foo'), null);
+}
+
