@@ -1,7 +1,7 @@
 
 var ss = require('..');
 
-var text = '<h1><div class="message">Hello</div><div class="message">World</div></h1>';
+var text = '<h1><div class="message hello">Hello</div><div class="message">World</div></h1>';
 var doc = ss.document(text);
 
 exports['Find elements'] = function (test) {
@@ -62,7 +62,7 @@ exports['Get second element to string'] = function (test) {
     elements.next();
     var element = elements.next();
     
-    test.equal(element.toString(), '<div class="message">Hello</div>');
+    test.equal(element.toString(), '<div class="message hello">Hello</div>');
 }
 
 exports['Get div elements'] = function (test) {
@@ -88,13 +88,25 @@ exports['Get elements with class message'] = function (test) {
     test.ok(element);
     test.equal(element.tag(), "div");
     test.equal(element.text(), "Hello");
-    test.equal(element.attributes().class, "message");
+    test.equal(element.attributes().class, "message hello");
     
     var element = elements.next();
     test.ok(element);
     test.equal(element.tag(), "div");
     test.equal(element.text(), "World");
     test.equal(element.attributes().class, "message");
+    
+    test.equal(elements.next(), null);
+}
+
+exports['Get elements with class hello'] = function (test) {
+    var elements = doc.find(".hello");
+    
+    var element = elements.next();
+    test.ok(element);
+    test.equal(element.tag(), "div");
+    test.equal(element.text(), "Hello");
+    test.equal(element.attributes().class, "message hello");
     
     test.equal(elements.next(), null);
 }
