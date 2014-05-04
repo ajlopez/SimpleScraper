@@ -51,10 +51,46 @@ function analyze(pageurl, cb) {
         var hdart = doc.find(".hd_article").first();
         
         if (hdart) {
-            var title = hdart.find("h2");
+            var cat = hdart.find("a").first();
+            
+            if (cat)
+                result.category = cat.text();
+            
+            var author = hdart.find(".signmail").first();
+            
+            if (author)
+                result.author = author.text();
+                
+            var title = hdart.find("h2").first();
             
             if (title)
                 result.title = title.text().trim();
+                
+            var brief = hdart.find("h5").first();
+            
+            if (brief)
+                result.brief = brief.text().trim();
+        }
+
+        var bdart = doc.find(".article_bd").first();
+        
+        if (bdart) {
+            var text = '';
+            var pars = bdart.find("p");
+            
+            for (var par = pars.next(); par; par = pars.next()) {
+                if (par.hasClass('info')) {
+                    result.published = par.text().trim();
+                    continue;
+                }
+                    
+                if (text.length)
+                    text += '\n';
+                    
+                text += par.text();
+            }
+            
+            result.text = text;
         }
         
         console.log(JSON.stringify(result, null, 4));
