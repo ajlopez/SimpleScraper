@@ -16,3 +16,5 @@ node getarticle http://www.clarin.com/politica/nuevos-alquileres-cierran-subas_0
 node getarticle http://www.clarin.com/politica/Urribarri-sobredimension-inseguridad_0_1132087167.html
 ```
 
+Output: JSON object with analyzed data (text, title, author, published, etc...)
+
