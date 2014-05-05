@@ -49,6 +49,21 @@ function analyze(pageurl, cb) {
         var doc = scrap.document(page);
         var result = { };
         
+        var note = doc.find("article").first();
+        
+        if (note) {
+            var sections = note.find("a");
+            
+            for (var section = sections.next(); section; section = sections.next()) {
+                var sectitle = section.attribute("title");
+                
+                if (sectitle && sectitle != "lanacion.com") {
+                    result.section = sectitle;
+                    break;
+                }
+            }
+        }
+        
         var header = doc.find("#encabezado").first();
         
         if (header) {

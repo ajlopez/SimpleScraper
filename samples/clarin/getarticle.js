@@ -51,10 +51,10 @@ function analyze(pageurl, cb) {
         var hdart = doc.find(".hd_article").first();
         
         if (hdart) {
-            var cat = hdart.find("a").first();
+            var section = hdart.find("a").first();
             
-            if (cat)
-                result.category = cat.text();
+            if (section)
+                result.section = section.text().trim();
             
             var author = hdart.find(".signmail").first();
             
