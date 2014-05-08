@@ -5,28 +5,28 @@ var text = '<h1><div title="hello" class="message hello">Hello</div><div id="wor
 var doc = ss.document(text);
 
 exports['Find elements'] = function (test) {
-    var elements = doc.find();
+    var elements = doc.elements();
     
     test.ok(elements);
     test.equal(elements.count(), 3);
 }
 
 exports['Find first element'] = function (test) {
-    var element = doc.find().first();
+    var element = doc.elements().first();
     
     test.ok(element);
     test.equal(element.tag(), "h1");
 }
 
 exports['Find first element in lower case'] = function (test) {
-    var element = doc.find().first();
+    var element = doc.elements().first();
     
     test.ok(element);
     test.equal(element.tag(), "h1");
 }
 
 exports['Find each element'] = function (test) {
-    var elements = doc.find();
+    var elements = doc.elements();
     
     test.ok(elements);
     
@@ -51,14 +51,14 @@ exports['Find each element'] = function (test) {
 }
 
 exports['Get first element to string'] = function (test) {
-    var elements = doc.find();
+    var elements = doc.elements();
     var element = elements.first();
     
     test.equal(element.toString(), text);
 }
 
 exports['Get second element to string'] = function (test) {
-    var elements = doc.find();
+    var elements = doc.elements();
     elements.next();
     var element = elements.next();
     
@@ -66,7 +66,7 @@ exports['Get second element to string'] = function (test) {
 }
 
 exports['Get div elements'] = function (test) {
-    var elements = doc.find("div");
+    var elements = doc.elements("div");
     
     var element = elements.next();
     test.ok(element);
@@ -82,7 +82,7 @@ exports['Get div elements'] = function (test) {
 }
 
 exports['Get elements with class message'] = function (test) {
-    var elements = doc.find(".message");
+    var elements = doc.elements(".message");
     
     var element = elements.next();
     test.ok(element);
@@ -100,7 +100,7 @@ exports['Get elements with class message'] = function (test) {
 }
 
 exports['Get elements with class hello'] = function (test) {
-    var elements = doc.find(".hello");
+    var elements = doc.elements(".hello");
     
     var element = elements.next();
     test.ok(element);
@@ -112,7 +112,7 @@ exports['Get elements with class hello'] = function (test) {
 }
 
 exports['Get element by id'] = function (test) {
-    var elements = doc.find("#world");
+    var elements = doc.elements("#world");
     
     var element = elements.next();
     test.ok(element);
@@ -124,7 +124,7 @@ exports['Get element by id'] = function (test) {
 }
 
 exports['Get elements with attribute title'] = function (test) {
-    var elements = doc.find("@title");
+    var elements = doc.elements("@title");
     
     var element = elements.next();
     test.ok(element);

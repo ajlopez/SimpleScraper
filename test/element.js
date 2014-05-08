@@ -44,7 +44,7 @@ exports['Get attribute by name'] = function (test) {
 exports['Find three elements'] = function (test) {
     var text = '<h1><div class="message hello">Hello</div><div id="world" class="message">World</div></h1>';
     var elem = ss.element(text);
-    var elements = elem.find();
+    var elements = elem.elements();
     
     test.ok(elements);
     test.equal(elements.count(), 3);
