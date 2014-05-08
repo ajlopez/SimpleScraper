@@ -18,6 +18,21 @@ Reference in your program:
 var ss = require('simplescraper');
 ```
 
+Create a document:
+```js
+var doc = ss.document(doctext);
+```
+
+Find and process elements:
+```js
+var elems = doc.elements();
+
+for (var elem = elems.next(); elem; elem = elems.next()) {
+    // process element
+}
+```
+
+
 TBD
 
 ## Development
