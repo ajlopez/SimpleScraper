@@ -90,6 +90,20 @@ function analyze(pageurl, cb) {
                 text += par.text();
             }
             
+            if (text == '') {
+                var divs = bdart.find("div");
+                
+                for (var div = divs.next(); div; div = divs.next()) {
+                    if (div.attribute('class'))
+                        continue;
+                        
+                    if (text.length)
+                        text += '\n';
+                        
+                    text += div.text();
+                }
+            }
+            
             result.text = text;
         }
         
