@@ -49,10 +49,10 @@ function analyze(pageurl, cb) {
         var doc = scrap.document(page);
         var result = { };
         
-        var note = doc.find("article").first();
+        var note = doc.elements("article").first();
         
         if (note) {
-            var sections = note.find("a");
+            var sections = note.elements("a");
             
             for (var section = sections.next(); section; section = sections.next()) {
                 var sectitle = section.attribute("title");
@@ -64,10 +64,10 @@ function analyze(pageurl, cb) {
             }
         }
         
-        var header = doc.find("#encabezado").first();
+        var header = doc.elements("#encabezado").first();
         
         if (header) {
-            var date = header.find(".fecha").first();
+            var date = header.elements(".fecha").first();
             
             if (date)
                 if (date.attributes().content)
@@ -75,32 +75,32 @@ function analyze(pageurl, cb) {
                 else
                     result.published = date.text().trim();
                     
-            var title = header.find("h1").first();
+            var title = header.elements("h1").first();
             
             if (title)
                 result.title = title.text().trim();
                 
-            var brief = header.find(".bajada").first();
+            var brief = header.elements(".bajada").first();
             
             if (brief)
                 result.brief = brief.text().trim();
         }
         
-        var body = doc.find("#cuerpo").first();
+        var body = doc.elements("#cuerpo").first();
         
         if (body) {
-            var photo = body.find(".foto").first();
+            var photo = body.elements(".foto").first();
             
             if (photo) {
                 var url = null;
                 var caption = null;
                 
-                var img = photo.find("img").first();
+                var img = photo.elements("img").first();
 
                 if (img)
                     url = img.attribute("src");
 
-                var figcaption = photo.find("figcaption").first();
+                var figcaption = photo.elements("figcaption").first();
                 
                 if (figcaption)
                     caption = figcaption.text().trim();
@@ -115,7 +115,7 @@ function analyze(pageurl, cb) {
             }
             
             var intext = false;
-            var elems = body.find();
+            var elems = body.elements();
             var text = ''
             
             for (var elem = elems.next(); elem; elem = elems.next()) {

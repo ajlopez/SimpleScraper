@@ -48,35 +48,35 @@ function analyze(pageurl, cb) {
         var doc = scrap.document(page);
         var result = { };
         
-        var hdart = doc.find(".hd_article").first();
+        var hdart = doc.elements(".hd_article").first();
         
         if (hdart) {
-            var section = hdart.find("a").first();
+            var section = hdart.elements("a").first();
             
             if (section)
                 result.section = section.text().trim();
             
-            var author = hdart.find(".signmail").first();
+            var author = hdart.elements(".signmail").first();
             
             if (author)
                 result.author = author.text();
                 
-            var title = hdart.find("h2").first();
+            var title = hdart.elements("h2").first();
             
             if (title)
                 result.title = title.text().trim();
                 
-            var brief = hdart.find("h5").first();
+            var brief = hdart.elements("h5").first();
             
             if (brief)
                 result.brief = brief.text().trim();
         }
 
-        var bdart = doc.find(".article_bd").first();
+        var bdart = doc.elements(".article_bd").first();
         
         if (bdart) {
             var text = '';
-            var pars = bdart.find("p");
+            var pars = bdart.elements("p");
             
             for (var par = pars.next(); par; par = pars.next()) {
                 if (par.hasClass('info')) {
@@ -91,7 +91,7 @@ function analyze(pageurl, cb) {
             }
             
             if (text == '') {
-                var divs = bdart.find("div");
+                var divs = bdart.elements("div");
                 
                 for (var div = divs.next(); div; div = divs.next()) {
                     if (div.attribute('class'))
