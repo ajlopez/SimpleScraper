@@ -18,6 +18,13 @@ exports['Find first element'] = function (test) {
     test.equal(element.tag(), "h1");
 }
 
+exports['Find first element using elemnt'] = function (test) {
+    var element = doc.element();
+    
+    test.ok(element);
+    test.equal(element.tag(), "h1");
+}
+
 exports['Find first element in lower case'] = function (test) {
     var element = doc.elements().first();
     
@@ -81,6 +88,14 @@ exports['Get div elements'] = function (test) {
     test.equal(elements.next(), null);
 }
 
+exports['Get first div element'] = function (test) {
+    var element = doc.element("div");
+    
+    test.ok(element);
+    test.equal(element.tag(), "div");
+    test.equal(element.text(), "Hello");
+}
+
 exports['Get elements with class message'] = function (test) {
     var elements = doc.elements(".message");
     
@@ -97,6 +112,15 @@ exports['Get elements with class message'] = function (test) {
     test.equal(element.attributes().class, "message");
     
     test.equal(elements.next(), null);
+}
+
+exports['Get first element with class message'] = function (test) {
+    var element = doc.element(".message");
+    
+    test.ok(element);
+    test.equal(element.tag(), "div");
+    test.equal(element.text(), "Hello");
+    test.equal(element.attributes().class, "message hello");
 }
 
 exports['Get elements with class hello'] = function (test) {
