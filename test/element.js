@@ -49,3 +49,14 @@ exports['Find three elements'] = function (test) {
     test.ok(elements);
     test.equal(elements.count(), 3);
 }
+
+exports['Find first div element'] = function (test) {
+    var text = '<h1><div class="message hello">Hello</div><div id="world" class="message">World</div></h1>';
+    var elem = ss.element(text);
+    var element = elem.element('div');
+    
+    test.ok(element);
+    test.equal(element.tag(), 'div');
+    test.equal(element.text(), 'Hello');
+    test.equal(element.attribute('class'), 'message hello');
+}
