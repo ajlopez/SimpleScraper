@@ -159,3 +159,15 @@ exports['Get elements with attribute title'] = function (test) {
     test.equal(elements.next(), null);
 }
 
+exports['Get elements using a predicate'] = function (test) {
+    var elements = doc.elements(function (element) { return element.attribute("title") == "hello"; });
+    
+    var element = elements.next();
+    test.ok(element);
+    test.equal(element.tag(), "div");
+    test.equal(element.text(), "Hello");
+    test.equal(element.attribute("title"), "hello");
+    
+    test.equal(elements.next(), null);
+}
+
