@@ -48,13 +48,40 @@ function analyze(pageurl, cb) {
         var doc = scrap.document(page);
         var result = { articles: [] };
         
-        var notes = doc.elements(".nota");
+        var articles = doc.elements("article");
         
-        for (var note = notes.next(); note; note = notes.next()) {
-            var title = note.element('h3');
+        for (var article = articles.next(); article; article = articles.next()) {
+            if (!article.hasClass('nota') && !article.hasClass('nota-img'))
+                continue;
+                
+            var data = {};
+                
+            var link = article.element('a');
             
-            if (title)
-                result.articles.push({ title: title.text() });
+            if (link) {
+                data.url = link.attribute('href');
+                data.title = link.attribute('title');
+            }
+            
+            var figure = article.element('figure');
+            
+            if (figure) {
+                var img = figure.element('img');
+                
+                if (img) {
+                    data.image = { };
+                    
+                    data.image.url = img.attribute('src');
+                    data.image.text = img.attribute('alt');
+                }
+            }
+            
+            var p = article.element('p');
+            
+            if (p)
+                data.text = p.text();
+                
+            result.articles.push(data);
         }
         
         console.log(JSON.stringify(result, null, 4));
