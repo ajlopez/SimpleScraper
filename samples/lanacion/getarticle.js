@@ -137,6 +137,22 @@ function analyze(pageurl, cb) {
                     text += '\n';
             }
             
+            if (text == '') {
+                var elems = body.elements();
+                for (var elem = elems.next(); elem; elem = elems.next()) {
+                    if (elem.tag() != "p" && elem.tag() != "h2")
+                        continue;
+                        
+                    if (text.length)
+                        text += '\n';
+                        
+                    text += elem.text().trim();
+                    
+                    if (elem.tag() == 'h2')
+                        text += '\n';
+                }
+            }
+            
             result.text = text;
         }
         
