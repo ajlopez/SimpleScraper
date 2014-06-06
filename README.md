@@ -32,8 +32,58 @@ for (var elem = elems.next(); elem; elem = elems.next()) {
 }
 ```
 
+Find elements by tag:
+```js
+var elems = doc.elements('div');
 
-TBD
+```
+
+Find elements by class:
+```js
+var elems = doc.elements('.news');
+
+```
+
+Find elements by id:
+```js
+var elems = doc.elements('#content');
+```
+
+Combined filters:
+```js
+var elems = doc.elements('div .news');
+```
+
+Find first element (or null):
+```js
+var firstelem = doc.element('div');
+var firstelem = doc.element('.news');
+var firstelem = doc.element('#content');
+```
+
+Filter elements:
+```js
+var elems = doc.elements(function (element) { return element.attribute('style') != null; });
+```
+
+
+Get attribute in an element (or null value):
+```js
+var myattr = elem.attribute('myattr');
+```
+
+Get attributes (as a plain JavaScript object, each attribute name is a property):
+```js
+var attrs = elem.attributes();
+// { class: 'news', type: 'text', ... }
+```
+
+
+Get element tag name as string:
+```js
+var tagname = elem.tag();
+```
+
 
 ## Development
 
