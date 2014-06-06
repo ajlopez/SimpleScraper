@@ -105,6 +105,10 @@ npm test
 - [Names](http://www.w3.org/MarkUp/html-spec/html-spec_3.html#SEC3.2.3) A name consists of a letter followed by letters, digits, periods, or hyphens...Element and attribute names are not case sensitive, but entity names are...
 - [Attributes](http://www.w3.org/MarkUp/html-spec/html-spec_3.html#SEC3.2.4)
 
+## Versions
+
+- 0.0.1: Published
+
 ## License
 
 MIT
