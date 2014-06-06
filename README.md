@@ -96,7 +96,8 @@ npm test
 
 ## Samples
 
-TBD
+- [Clarin Argentinean news site](https://github.com/ajlopez/SimpleScraper/tree/master/samples/clarin)
+- [La Nacion Argentinean news site](https://github.com/ajlopez/SimpleScraper/tree/master/samples/lanacion)
 
 ## References
 
