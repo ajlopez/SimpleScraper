@@ -1,0 +1,253 @@
+{
+    "articles": [
+        {
+            "url": "/politica/buitre-juego_on_line-baez_0_1238276524.html",
+            "title": "Con categorías de ratas ya está on line el juego buitre de la ruta del dinero K",
+            "image": {
+                "url": "/politica/Cartas_CLAIMA20141028_0213_33.jpg",
+                "text": "Cartas."
+            },
+            "text": " Es una irónica aplicación web que lanzaron los holdouts. Cada personaje tiene una&nbsp;carta y su puntaje ratero. Miralos."
+        },
+        {
+            "url": "/politica/Adelanto-indagatoria-Boudou-aviones-privados_0_1238276474.html",
+            "title": "Un fiscal pide la indagatoria de Boudou por los vuelos en aviones privados",
+            "image": {
+                "url": "/politica/Amado-Boudou-Horacio-Telechea-Necochea_CLAIMA20141028_0194_34.jpg",
+                "text": "Amado Boudou y Horacio Telechea en un acto en Necochea. (Télam)"
+            },
+            "text": "Carlos R&iacute;volo solicit&oacute; que el vicepresidente declare por el delito de d&aacute;divas. Tambi&eacute;n pidi&oacute; citar al ex intendente de Necochea y a dos empresarios privados."
+        },
+        {
+            "url": "/politica/Carrio-impugno-Vanoli-Senado-idoneo_0_1238276454.html",
+            "title": "Carrió impugnó el pliego de Vanoli en el Senado: No es idóneo",
+            "image": {
+                "url": "/politica/Carrio-Diputados-Jorge-Capitanich-DYN_CLAIMA20140904_0021_32.jpg",
+                "text": "En sesión. Elisa Carrió ayer durante el debate en Diputados ante la presencia de Jorge Capitanich. / DYN"
+            },
+            "text": "La diputada de la Coalici&oacute;n C&iacute;vica asegur&oacute; que el flamante titular del Banco Central &quot;ha demostrado nula independencia&quot; del Gobierno y adelant&oacute; que har&aacute; un uso &quot;irresponsable&quot; de las reservas. Su presentaci&oacute;n."
+        },
+        {
+            "url": "/politica/Cristina-Bachelet-Tratado_de_Amistad_con_Chile-limites_0_1238276519.html",
+            "title": "Cristina Bachelet y el Papa en una videoconferencia",
+            "image": {
+                "url": "/politica/presidentas-reunion-anterior_CLAIMA20141028_0211_34.jpg",
+                "text": "Las dos presidentas en una reunión anterior."
+            },
+            "text": "La presidente chilena llega a Buenos Aires el martes 4 para conmemorar los 30 a&ntilde;os del Tratado de Paz bilateral y los cinco a&ntilde;os del Tratado de Maip&uacute;."
+        },
+        {
+            "url": "/politica/Pichetto-Santa_Fe-Medellin-narcotrafico_0_1238276529.html",
+            "title": "Polémica frase de Pichetto: Santa Fe es la nueva Medellín",
+            "image": {
+                "url": "/politica/Miguel-Angel-Pichetto_CLAIMA20141028_0216_33.jpg",
+                "text": "Miguel Angel Pichetto"
+            },
+            "text": "El jefe del bloque K realiz&oacute; una pol&eacute;mica comparaci&oacute;n para intentar justificar la necesidad de expulsar extranjeros. &quot;Si Santa Fe es Medell&iacute;n, Argentina es Colombia&quot;,replic&oacute; Gerardo Morales."
+        },
+        {
+            "url": "/politica/nino-kirchnerista-militante-presidente_0_1238276337.html",
+            "title": "El chico ultra K que adora a Kirchner y quiere ser presidente en 2050",
+            "image": {
+                "url": "/politica/nene-nino-militante_K-presidente_CLAIMA20141028_0080_33.jpg",
+                "text": "El pequeño militante K que quiere ser presidente."
+            }
+        },
+        {
+            "url": "/politica/La_Brujula_24-allanamiento-juez-secretos-Suris_0_1238276440.html",
+            "title": "Invocando violación de secretos un juez allanó un medio en Bahía Blanca",
+            "image": {
+                "url": "/espectaculos/Monica-Farro-comprometio-Suris_CLAIMA20140514_0128_35.jpg",
+                "text": "Mónica Farro se comprometió con Suris"
+            },
+            "text": " El juez ordenó que la Policía ingresara a la redacción de “La Brújula 24”, para evitar que se conozcan más audios."
+        },
+        {
+            "url": "/policiales/denuncio-violaron-boliche-ultima-Melina_0_1238276544.html",
+            "title": "Denuncia que la violaron al salir del boliche donde se vio por última vez a Melina",
+            "image": {
+                "url": "/policiales/Foto-Melina-Chankanab-desaparecer-Toto_CLAIMA20140928_0066_34.jpg",
+                "text": "Foto. Melina en “Chankanab” el viernes previo a desaparecer. Al lado “Toto”."
+            }
+        },
+        {
+            "url": "/sociedad/Contenidos-Web-Corte-fallo-buscadores_0_1238276409.html",
+            "title": "Contenidos en la Web: la Corte falló a favor de los buscadores",
+            "image": {
+                "url": "/tecnologia/Belen-Rodriguez-Google-vincularla-pornograficos_CLAIMA20140604_0210_31.jpg",
+                "text": "Belén Rodríguez la modelo que demandó a Google por vincularla con sitios pornográficos"
+            }
+        },
+        {
+            "url": "/politica/Mariana_Zuvic-Elisa_Carrio_0_1238276377.html",
+            "title": "Es ahijada política de Carrió y se vistió de Angelina Jolie por sus “cuatro décadas ganadas”",
+            "image": {
+                "url": "/politica/Momo-Benegas-Mariana-Zuvic-Raider_CLAIMA20141028_0127_33.jpg",
+                "text": "El Momo Benegas en el gran festejo de cumpleaños de Mariana Zuvic lookeada como como Tom Raider"
+            },
+            "text": "Mariana Zuvic realiz&oacute; en Santa Cruz un cumplea&ntilde;os solidario, con pol&iacute;ticos y periodistas invitados. Todas las fotos."
+        },
+        {
+            "url": "/politica/Lavado_de_dinero-Gonella-fiscal-declara-Baez-Lazaro_0_1238276317.html",
+            "title": "El fiscal que destacó Cristina volvió a postergar su declaración por no investigar a Báez",
+            "image": {
+                "url": "/politica/Fiscal-Carlos-Gonella_CLAIMA20141004_0093_34.jpg",
+                "text": "Fiscal. Carlos Gonella."
+            },
+            "text": "Es el titular de la Procelac, Carlos Gonella. Tambi&eacute;n fue citado en otro caso por supuesto abuso de autoridad."
+        },
+        {
+            "url": "/policiales/Hacen-boquete-celulares-ultima-generacion_0_1238276483.html",
+            "title": "Hacen un boquete para robar celulares de última generación",
+            "image": {
+                "url": "/policiales/Boqueteros-Belgrano-Entraron-Avenida-Cabildo_CLAIMA20141028_0195_34.jpg",
+                "text": "Boqueteros en Belgrano. Entraron de madrugada a robar al local de Musimundo de Avenida Cabildo 1873."
+            }
+        },
+        {
+            "url": "/mundo/socio-Dominique-Strauss-Kahn-Thierry-Layen-suicidio_0_1238276451.html",
+            "title": "Se suicidó el socio del ex director del FMI Strauss Kahn",
+            "image": {
+                "url": "/mundo/Thierry-Leyne-Dominique-Strauss-Kahn-financiera_CLAIMA20141028_0186_33.jpg",
+                "text": "Thierry Leyne (izq.) y Dominique Strauss-Kahn en la página web de su sociedad financiera. "
+            }
+        },
+        {
+            "url": "/policiales/Priscila-ahorcaron-propia-remera_0_1238276523.html",
+            "title": "A Priscila la ahorcaron con su propia remera",
+            "image": {
+                "url": "/policiales/Priscila-anos-vivia-Parana-padres_CLAIMA20141028_0011_34.jpg",
+                "text": "Priscila. Tenía 22 años y vivía en Paraná con sus padres. "
+            }
+        },
+        {
+            "url": "/deportes/sorpresa-hinchas-Cavenaghi-Teo-Ponzio_0_1238276461.html",
+            "title": "Una sorpresa de Cavenaghi Teo y Ponzio para los hinchas de River",
+            "image": {
+                "url": "/deportes/Teofilo-Gutierrez-sorprendio-entregarle-indumentaria_CLAIMA20141028_0187_36.jpg",
+                "text": "Teófilo Gutiérrez sorprendió a un hincha al entregarle un pedido de indumentaria del club en su casa."
+            },
+            "text": "Los jugadores repartieron productos que algunos simpatizantes hab&iacute;an comprado a trav&eacute;s de la tienda virtual del club."
+        },
+        {
+            "url": "/deportes/Solidaridad-Lionel_Messi-Barcelona-Fundacion_Barcelona-FundacionLeoMessi_0_1238276467.html",
+            "title": "Messi les hizo vivir a 30 chicos un día inolvidable",
+            "image": {
+                "url": "/deportes/LionelMessi-solidadridad_CLAIMA20141028_0190_34.jpg",
+                "text": "Messi junto a los niños que recibió en el entrenamiento. (Foto: www.fcbarcelona.es)"
+            }
+        },
+        {
+            "url": "/deportes/sudafricana-noqueada-murio-semanas-coma_0_1238276378.html",
+            "title": "Una boxeadora sudafricana murió tras estar dos semanas en coma",
+            "image": {
+                "url": "/deportes/Phindile-Mwelase-Fallecio-pasar-Twitter_CLAIMA20141028_0116_33.jpg",
+                "text": "Phindile Mwelase en la lona. Falleció luego de pasar un mes en coma. (Twitter)"
+            }
+        },
+        {
+            "url": "/deportes/futbol/Tevez-historia-secreta-termino-Seleccion_0_1238276227.html",
+            "title": "Tevez: La historia secreta de cómo terminó el cepo en la Selección",
+            "image": {
+                "url": "/deportes/Tevez-Seleccion-Argentina-vigente-Telam_CLAIMA20130912_0117_38.jpg",
+                "text": "Tévez y la Selección Argentina un amor que está vigente. (Télam)"
+            }
+        },
+        {
+            "url": "/deportes/Blatter-Darle-Balon-Mundial-Messi_0_1238276352.html",
+            "title": "Blatter sorprendió: dura crítica por el Balón de Oro del Mundial a Messi",
+            "image": {
+                "url": "/deportes/Blatter-Balon-Mundial-Brasil-AP_CLAIMA20140715_0182_37.jpg",
+                "text": "Hasta Blatter se mostró sorprendido por la elección de Messi como Balón de Oro del Mundial de Brasil. (AP)"
+            },
+            "text": ""
+        },
+        {
+            "url": "/deportes/Cristiano-jugador-mejor-depilado_0_1238276403.html",
+            "title": "Cristiano es el jugador mejor depilado",
+            "image": {
+                "url": "/deportes/Cristiano-Ronaldo-Irina-Shayk-EFE_CLAIMA20141028_0138_36.jpg",
+                "text": "Cristiano Ronaldo y su novia Irina Shayk al llegar a la gala. (EFE)"
+            }
+        },
+        {
+            "url": "/policiales/ultimos-llego-gente-complicada-pais_0_1238276448.html",
+            "title": "Burzaco: En los últimos 10 años llegó gente muy complicada al país",
+            "image": {
+                "url": "/policiales/Eugenio-Burzaco-Policia-Metropolitana-Gastiarena_CLAIMA20141028_0094_33.jpg",
+                "text": "Eugenio Burzaco ex jefe de la Policía Metropolitana. (Fabán Gastiarena)"
+            },
+            "text": "El ex jefe de la Metropolitana y co-autor del libro &quot;El poder narco&quot;, se refiri&oacute; a la inseguridad y a los hechos sospechados de tener conexi&oacute;n con el mundo de las drogas: &quot;Las fronteras son un colador&quot;."
+        },
+        {
+            "url": "/policiales/hecho-dirigido-dijo-Stornelli_0_1238276373.html",
+            "title": "Stornelli sobre el extraño episodio: No fue un hecho dirigido hacia mí",
+            "image": {
+                "url": "/policiales/Atrapan-delincuentes-Stornelli-Diego-Diaz_CLAIMA20141027_0223_33.jpg",
+                "text": "Atrapan a 7 delincuentes por intento de robo al fiscal Stornelli. (Diego Díaz)"
+            },
+            "text": "El fiscal y actual Jefe de Seguridad de Boca descart&oacute; que el hecho extra&ntilde;o ocurrido ayer en la Autopista Illia lo tuviese como principal v&iacute;ctima. Los siete detenidos declarar&aacute;n esta tarde."
+        },
+        {
+            "url": "/sociedad/eligio-morir-noviembre-cumplio-ultimo-deseo-brittany_maynard-eutanasia_0_1238276315.html",
+            "title": "La chica que eligió morir el 1° de noviembre cumplió su último deseo",
+            "image": {
+                "url": "/sociedad/Brittany-Maynard-Dan-Gran-Canon_CLAIMA20141028_0113_33.jpg",
+                "text": "Brittany Maynard junto a su esposo Dan en el Gran Cañón en el viaje que deseaba hacer antes de su muerte. "
+            }
+        },
+        {
+            "url": "/sociedad/Claudia-Pineiro-muerte-Wikipedia-rastrean_0_1238276345.html",
+            "title": "La escritora Claudia Piñeiro se enteró de su propia muerte en Wikipedia",
+            "image": {
+                "url": "/sociedad/Claudia-Pineiro-premiadas-recientemente-Wikipedia_CLAIMA20141028_0137_33.jpg",
+                "text": "Claudia Piñeiro la escritora de novelas premiadas y llevadas al cine tuiteó en las últimas horas que se enteró de su propia muerte a través de una entrada subida recientemente a Wikipedia."
+            }
+        },
+        {
+            "url": "/sociedad/Famosos-leyeron-propia-muerte-Web_0_1238276361.html",
+            "title": "Los famosos que se enteraron de su propia muerte",
+            "image": {
+                "url": "/sociedad/Nueva-Jersey-Bon-Jovi-desmentir_CLAIMA20141028_0102_35.jpg",
+                "text": "“El cielo se parece bastante a Nueva Jersey” es el mensaje que usó Bon Jovi para desmentir la falsa noticia de su muerte. "
+            }
+        },
+        {
+            "url": "/politica/Cristina-invitada-casamiento-Cirio-Insaurralde_0_1238276364.html",
+            "title": "Cirio contó por qué no invitaron a Cristina al casamiento",
+            "image": {
+                "url": "/politica/Cristina-invitada_CLAIMA20141028_0104_33.jpg",
+                "text": "Cristina no está invitada."
+            }
+        },
+        {
+            "url": "/sociedad/paro-docente-Provincia_0_1238276498.html",
+            "title": "Un gremio docente de la Provincia votó un nuevo paro de 48 horas",
+            "text": "Es la FEB, uno de los m&aacute;s representativos del distrito. Todav&iacute;a no se fij&oacute; la fecha."
+        },
+        {
+            "url": "/deportes/Rogerio-Ceni-ganador-historia_0_1238276476.html",
+            "title": "Rogerio Ceni el más ganador de la historia en un equipo",
+            "image": {
+                "url": "/deportes/Rogerio-ganador-nato-Foto-AP_CLAIMA20141028_0191_33.jpg",
+                "text": "Rogerio un ganador nato. (Foto: AP)"
+            }
+        },
+        {
+            "url": "/deportes/Arruabarrena-certezas-enfrentar-Cerro-Porteno_0_1238276398.html",
+            "title": "Arruabarrena probó a Fuenzalida en el tridente ofensivo",
+            "image": {
+                "url": "/deportes/Vasco-Arruabarrena-Boca-Gustavo-Garello_CLAIMA20141003_0249_41.jpg",
+                "text": "El Vasco Arruabarrena durante un entrenamiento de Boca. (Gustavo Garello)"
+            }
+        },
+        {
+            "url": "/deportes/Novak-Djokovic-gano-padre_0_1238276518.html",
+            "title": "Papá Djokovic ganó su primer partido",
+            "image": {
+                "url": "/deportes/Novak-Djokovic-nacimiento-primogenito-AFP_CLAIMA20141028_0235_34.jpg",
+                "text": "Novak Djokovic logró su primera victoria desde el nacimiento de su primogénito. (AFP)"
+            }
+        }
+    ]
+}
