@@ -63,6 +63,11 @@ function analyze(pageurl, cb) {
             
             if (title)
                 result.title = title.text().trim();
+				
+			var image = hdart.elements("img").first();
+			
+			if (image && image.attribute('src'))
+				result.image = image.attribute('src');
                 
             var brief = hdart.elements("h5").first();
             
