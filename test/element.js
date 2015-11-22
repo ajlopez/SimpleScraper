@@ -26,6 +26,18 @@ exports['To string'] = function (test) {
     test.equal(elem.toString(), text);
 }
 
+exports['Element with mixed case close'] = function (test) {
+    var text = '<div class="message">Hello</DIV>';
+    var elem = ss.element(text);
+    
+    test.ok(elem);
+    test.ok(typeof elem == 'object');
+    test.equal(elem.toString(), text);
+    test.equal(elem.tag(), "div");
+    test.equal(elem.length(), text.length);
+    test.equal(elem.text(), "Hello");
+}
+
 exports['Get attributes'] = function (test) {
     var result = elem.attributes();
     
