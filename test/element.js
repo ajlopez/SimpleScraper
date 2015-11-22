@@ -15,14 +15,15 @@ exports['Create document and to string'] = function (test) {
 }
 
 exports['Get element length'] = function (test) {
-    text = '<div class="message">Hello</div>';
-    elem = ss.element(text);
-    
     test.equal(elem.length(), text.length);
 }
 
 exports['Get text'] = function (test) {
     test.equal(elem.text(), "Hello");
+}
+
+exports['To string'] = function (test) {
+    test.equal(elem.toString(), text);
 }
 
 exports['Get attributes'] = function (test) {
