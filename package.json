@@ -1,11 +1,11 @@
 { "name": "simplescraper"
 , "description": "SimpleScraper define parsers"
 , "keywords": [ "grammar", "javascript", "parser" ]
-, "version": "0.0.1"
+, "version": "0.0.2"
 , "author": "Angel 'Java' Lopez <webmaster@ajlopez.com> (http://www.ajlopez.com)"
 , "repository": { "type": "git", "url": "git://github.com/ajlopez/SimpleScraper.git" }
 , "main": "./lib/simplescraper.js"
-, "engines": { "node": ">= 0.6.0 && < 0.13.0" }
+, "engines": { "node": ">= 0.10.0" }
 , "scripts": {
     "test": "simpleunit test"
   }

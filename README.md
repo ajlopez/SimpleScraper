@@ -108,6 +108,7 @@ npm test
 ## Versions
 
 - 0.0.1: Published
+- 0.0.2: Published, new examples, internal refactor
 
 ## License
 
