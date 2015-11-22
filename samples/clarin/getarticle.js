@@ -48,23 +48,26 @@ function analyze(pageurl, cb) {
         var doc = scrap.document(page);
         var result = { };
         
-        var hdart = doc.elements(".hd_article").first();
+        var hdart = doc.elements('section').first();
+        
+        if (hdart)
+            hdart = hdart.elements("article").first();
         
         if (hdart) {
-            var section = hdart.elements("a").first();
-            
-            if (section)
-                result.section = section.text().trim();
-            
             var author = hdart.elements(".signmail").first();
             
             if (author)
                 result.author = author.text();
                 
-            var title = hdart.elements("h2").first();
+            var title = hdart.elements("h1").first();
             
             if (title)
                 result.title = title.text().trim();
+				
+			var image = hdart.elements("img").first();
+			
+			if (image && image.attribute('src'))
+				result.image = image.attribute('src');
                 
             var brief = hdart.elements("h5").first();
             
@@ -72,7 +75,7 @@ function analyze(pageurl, cb) {
                 result.brief = brief.text().trim();
         }
 
-        var bdart = doc.elements(".article_bd").first();
+        var bdart = hdart.elements(function (elem) { return elem.hasClass('nota'); }).first();
         
         if (bdart) {
             var text = '';
