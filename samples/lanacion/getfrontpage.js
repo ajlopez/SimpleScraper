@@ -52,9 +52,6 @@ function analyze(pageurl, cb) {
         var articles = doc.elements("article");
         
         for (var article = articles.next(); article; article = articles.next()) {
-            if (!article.hasClass('nota'))
-                continue;
-            
             var data = { };
             
             var img = article.element('img');
@@ -69,9 +66,11 @@ function analyze(pageurl, cb) {
             
             if (h2) {
                 var link = h2.element('a');
-                
-                data.title = link.text();
-                data.url = link.attribute('href');
+
+				if (link) {
+					data.title = link.text();
+					data.url = link.attribute('href');
+				}
             }
             
             if (Object.keys(data).length)
