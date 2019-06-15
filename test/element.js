@@ -1,12 +1,9 @@
 
-var ss = require('..');
+const ss = require('..');
 
-var text;
-var elem;
-    
 exports['Create document and to string'] = function (test) {
-    text = '<div class="message">Hello</div>';
-    elem = ss.element(text);
+    const text = '<div class="message">Hello</div>';
+    const elem = ss.element(text);
     
     test.ok(elem);
     test.ok(typeof elem == 'object');
@@ -15,20 +12,29 @@ exports['Create document and to string'] = function (test) {
 }
 
 exports['Get element length'] = function (test) {
+    const text = '<div class="message">Hello</div>';
+    const elem = ss.element(text);
+    
     test.equal(elem.length(), text.length);
 }
 
 exports['Get text'] = function (test) {
+    const text = '<div class="message">Hello</div>';
+    const elem = ss.element(text);
+    
     test.equal(elem.text(), "Hello");
 }
 
 exports['To string'] = function (test) {
+    const text = '<div class="message">Hello</div>';
+    const elem = ss.element(text);
+    
     test.equal(elem.toString(), text);
 }
 
 exports['Element with mixed case close'] = function (test) {
-    var text = '<div class="message">Hello</DIV>';
-    var elem = ss.element(text);
+    const text = '<div class="message">Hello</DIV>';
+    const elem = ss.element(text);
     
     test.ok(elem);
     test.ok(typeof elem == 'object');
@@ -39,7 +45,9 @@ exports['Element with mixed case close'] = function (test) {
 }
 
 exports['Get attributes'] = function (test) {
-    var result = elem.attributes();
+    const text = '<div class="message">Hello</DIV>';
+    const elem = ss.element(text);
+    const result = elem.attributes();
     
     test.ok(result);
     test.equal(typeof result, 'object');
@@ -47,9 +55,9 @@ exports['Get attributes'] = function (test) {
 }
 
 exports['Get attribute as flag'] = function (test) {
-    var text = '<input required/>';
-    var elem = ss.element(text);
-    var result = elem.attributes();
+    const text = '<input required/>';
+    const elem = ss.element(text);
+    const result = elem.attributes();
     
     test.ok(result);
     test.equal(typeof result, 'object');
@@ -57,26 +65,30 @@ exports['Get attribute as flag'] = function (test) {
 }
 
 exports['Get attribute by name'] = function (test) {
+    const text = '<div class="message">Hello</div>';
+    const elem = ss.element(text);
+
     test.equal(elem.attribute('class'), 'message');
     test.equal(elem.attribute('foo'), null);
 }
 
 exports['Find three elements'] = function (test) {
-    var text = '<h1><div class="message hello">Hello</div><div id="world" class="message">World</div></h1>';
-    var elem = ss.element(text);
-    var elements = elem.elements();
+    const text = '<h1><div class="message hello">Hello</div><div id="world" class="message">World</div></h1>';
+    const elem = ss.element(text);
+    const elements = elem.elements();
     
     test.ok(elements);
     test.equal(elements.count(), 3);
 }
 
 exports['Find first div element'] = function (test) {
-    var text = '<h1><div class="message hello">Hello</div><div id="world" class="message">World</div></h1>';
-    var elem = ss.element(text);
-    var element = elem.element('div');
+    const text = '<h1><div class="message hello">Hello</div><div id="world" class="message">World</div></h1>';
+    const elem = ss.element(text);
+    const element = elem.element('div');
     
     test.ok(element);
     test.equal(element.tag(), 'div');
     test.equal(element.text(), 'Hello');
     test.equal(element.attribute('class'), 'message hello');
 }
+
