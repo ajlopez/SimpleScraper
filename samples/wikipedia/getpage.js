@@ -67,6 +67,7 @@ function analyze(topic, cb) {
 		
 		var data = {
 			title: title.text(),
+            content: content.text(),
 			text: body.text(),
 			references: references
 		};
